@@ -1,7 +1,7 @@
 # poder-python
 Esse programa demonstra o poder do python.
 
-Este é um simples projeto em Python que demonstra a capacidade de processamento de dados do python. Ele cria uma lista que vai de 1 a 100 milhões e ainda exibe a soma desses números em poucos segundos.
+Este é um simples projeto em Python que demonstra a sua capacidade de processamento de dados. Ele cria uma lista que vai de 1 ao valor inserido pelo usuário e realiza operações matemáticas.
 
 ## Como usar
 
