@@ -18,6 +18,17 @@ def calcular_estatisticas(lista):
     return soma, quadrado, menor_numero, maior_numero
 
 
+def fatoracao_primos(numero):
+    fatores_primos = []
+    divisor = 2
+    while numero > 1:
+        while numero % divisor == 0:
+            fatores_primos.append(divisor)
+            numero //= divisor
+        divisor += 1
+    return fatores_primos
+
+
 def criar_histograma(lista):
     """Cria um histograma da lista."""
     plt.figure(num='Histograma')
@@ -115,12 +126,16 @@ def main():
     lista = criar_lista(n)
     soma, quadrado, menor_numero, maior_numero = calcular_estatisticas(lista)
 
+    # Fatoração de um número
+    numero = n
+    fatores = fatoracao_primos(numero)
     print(f'O menor número da lista: {menor_numero}')
     print(f'O maior número da lista: {maior_numero}')
     print(f'A soma de todos eles: {soma}')
     print(f'O quadrado da soma dos números é: {quadrado}')
     raiz_quadrada = math.sqrt(soma)
     print(f'A raiz quadrada da soma dos números é: {raiz_quadrada}')
+    print(f'Fatores primos de {numero}: {fatores}')
 
     tempo_final = time()
     tempo_execucao = tempo_final - tempo_inicial
