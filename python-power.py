@@ -2,6 +2,7 @@ from time import sleep
 import math
 import matplotlib.pyplot as plt
 from time import time
+from mpl_toolkits.mplot3d import Axes3D
 
 
 def criar_lista(n):
@@ -51,10 +52,7 @@ def criar_grafico_3d(lista, soma, raiz_quadrada):
     y = [soma] * len(lista)
     z = [raiz_quadrada] * len(lista)
 
-    # Use um marcador (por exemplo, 'o' para círculos) e uma cor (por
-    # exemplo, vermelho) para os pontos
     ax.scatter(x, y, z, c='r', marker='o', label='Pontos')
-
     ax.set_xlabel('Números')
     ax.set_ylabel('Soma')
     ax.set_zlabel('Raiz Quadrada')
