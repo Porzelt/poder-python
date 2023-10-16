@@ -10,3 +10,6 @@ Este é um simples projeto em Python que demonstra a sua capacidade de processam
 
    ```bash
    git clone https://github.com/porzelt/poder-python.git
+
+3. Ou execute direto do navegador com Replit:
+4. https://replit.com/@henriqueporzelt/Python-power
