@@ -8,7 +8,6 @@ Este é um simples projeto em Python que demonstra a sua capacidade de processam
 1. Certifique-se de ter o Python instalado na sua máquina.
 2. Clone este repositório:
 
-   ```bash
    git clone https://github.com/porzelt/poder-python.git
 
 3. Ou execute direto do navegador com Replit:
